@@ -1,4 +1,5 @@
 import BattleStatus from "./BattleStatus";
+import PlayerHealth from "./PlayerHealth";
 import "./SpaceBattleSimulator.css";
 
 function SpaceBattleSimulator({ }) {
@@ -8,15 +9,11 @@ function SpaceBattleSimulator({ }) {
                 <h1 class="Space-Battle-Simulator-Header">Space Battle Simulator</h1>
             </div>
             <div class="Space-Battle-Simulator-Health-Actions">
-                <div>
-                    Player Health: 12
-                </div>
+                <PlayerHealth name={"Player"} health={"4"} color={"green"} />
                 <div>
                     <button>Fire!</button>
                 </div>
-                <div>
-                    Enemy Health: 48
-                </div>
+                <PlayerHealth name={"Enemy"} health={"90"} color={"red"} />
             </div>
             <BattleStatus message={"Congratulations!"} />
         </div>
