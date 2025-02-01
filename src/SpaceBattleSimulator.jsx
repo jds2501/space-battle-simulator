@@ -1,3 +1,4 @@
+import BattleStatus from "./BattleStatus";
 import "./SpaceBattleSimulator.css";
 
 function SpaceBattleSimulator({ }) {
@@ -17,11 +18,9 @@ function SpaceBattleSimulator({ }) {
                     Enemy Health: 48
                 </div>
             </div>
-            <div class="Space-Battle-Simulator-Status">
-                <p>Congratulations! You've successfully defended your spacecraft!</p>
-            </div>
+            <BattleStatus message={"Congratulations!"} />
         </div>
-    )
+    );
 }
 
 export default SpaceBattleSimulator;
