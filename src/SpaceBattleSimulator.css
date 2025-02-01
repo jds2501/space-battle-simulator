@@ -1,0 +1,29 @@
+.Space-Battle-Simulator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.Space-Battle-Simulator-Header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Space-Battle-Simulator-Health-Actions, .Space-Battle-Simulator-Status {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Space-Battle-Simulator-Status {
+    text-align: center;
+    border-style: solid;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Space-Battle-Simulator-Health-Actions {
+    display: flex;
+    justify-content: space-between;
+}
