@@ -14,7 +14,7 @@ function SpaceBattleSimulator({ }) {
             </div>
             <div className="Space-Battle-Simulator-Health-Actions">
                 <PlayerHealth name={"Player"} health={playerHealth} color={"green"} />
-                <PlayerAction actionName={"Fire!"} actionCallback={() => {
+                <PlayerAction playerHealth={playerHealth} enemyHealth={enemyHealth} actionCallback={() => {
                     console.log("Click!");
                 }} />
                 <PlayerHealth name={"Enemy"} health={enemyHealth} color={"red"} />
