@@ -14,7 +14,7 @@ function BattleStatus({ playerHealth, enemyHealth }) {
     }
 
     return (
-        <div class="Battle-Status">
+        <div className="Battle-Status">
             <p>{statusMessage}</p>
         </div>
     );

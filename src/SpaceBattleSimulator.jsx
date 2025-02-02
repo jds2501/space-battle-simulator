@@ -1,4 +1,5 @@
 import BattleStatus from "./BattleStatus";
+import PlayerAction from "./PlayerAction";
 import PlayerHealth from "./PlayerHealth";
 import "./SpaceBattleSimulator.css";
 
@@ -7,15 +8,15 @@ function SpaceBattleSimulator({ }) {
     let playerHealth = 80;
 
     return (
-        <div class="Space-Battle-Simulator">
+        <div className="Space-Battle-Simulator">
             <div>
-                <h1 class="Space-Battle-Simulator-Header">Space Battle Simulator</h1>
+                <h1 className="Space-Battle-Simulator-Header">Space Battle Simulator</h1>
             </div>
-            <div class="Space-Battle-Simulator-Health-Actions">
+            <div className="Space-Battle-Simulator-Health-Actions">
                 <PlayerHealth name={"Player"} health={playerHealth} color={"green"} />
-                <div>
-                    <button>Fire!</button>
-                </div>
+                <PlayerAction actionName={"Fire!"} actionCallback={() => {
+                    console.log("Click!");
+                }} />
                 <PlayerHealth name={"Enemy"} health={enemyHealth} color={"red"} />
             </div>
             <BattleStatus playerHealth={playerHealth} enemyHealth={enemyHealth} />
