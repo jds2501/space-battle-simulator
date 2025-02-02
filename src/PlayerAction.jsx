@@ -1,6 +1,8 @@
+import "./PlayerAction.css";
+
 function PlayerAction({ actionName, actionCallback }) {
     return (
-        <div>
+        <div className="PlayerAction">
             <button onClick={actionCallback}>{actionName}</button>
         </div>
     );
