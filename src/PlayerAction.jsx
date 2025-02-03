@@ -4,13 +4,13 @@ const RESTART_STYLE = {
     backgroundColor: "black",
     color: "white",
     border: "10px solid white"
-}
+};
 
 const FIRE_STYLE = {
     backgroundColor: "#ff8d11",
     color: "white",
     border: "10px solid #fe2122"
-}
+};
 
 function PlayerAction({ playerHealth, enemyHealth, actionCallback }) {
     let buttonColor = FIRE_STYLE;
